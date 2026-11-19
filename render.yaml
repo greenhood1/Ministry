@@ -15,6 +15,26 @@ services:
         generateValue: true
       - key: ADMIN_PASSWORD
         sync: false
+      - key: TIMEZONE
+        value: Africa/Lagos
+      - key: SEND_HOUR
+        value: "8"
+      - key: CRON_SECRET
+        generateValue: true
+      - key: WA_VERIFY_TOKEN
+        generateValue: true
+      - key: WA_TOKEN
+        sync: false
+      - key: WA_PHONE_ID
+        sync: false
+      - key: WA_APP_SECRET
+        sync: false
+      - key: WA_TEMPLATE_BIRTHDAY
+        value: church_birthday
+      - key: WA_TEMPLATE_REMINDER
+        value: church_reminder
+      - key: WA_TEMPLATE_WELCOME
+        value: church_welcome
 databases:
   - name: church-db
     plan: free
